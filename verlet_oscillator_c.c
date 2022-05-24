@@ -39,6 +39,7 @@ int main()
     int o;
     FILE *fp;
     fp=fopen("output.txt","w");
+    fprintf(fp, "Potential Energy  Kinetic Energy  Total Energy  Velocity  Position  time\n");
     for(o=0;o<steps;o++){
       fprintf(fp,"%f %f %f %f %f %f",data[0][o], data[1][o], data[2][o], data[3][o], data[4][o], data[5][o]);
       fprintf(fp,"%c",'\n');
